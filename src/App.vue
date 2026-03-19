@@ -13,19 +13,18 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped>
+<style>
 nav {
-  padding: 20px;
-  background-color: #f8f9fa;
-  margin-bottom: 20px;
+  background: linear-gradient(90deg, #6a0dad, #00cfff);
+  padding: 15px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
 }
-nav a {
-  margin-right: 15px;
+
+a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  color: #2c3e50;
-}
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

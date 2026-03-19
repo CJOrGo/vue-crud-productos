@@ -58,7 +58,7 @@ const agregarAlCarrito = (producto) => {
     </router-link>
   </div>
 </template>
-
+<!--
 <style scoped>
 /* Estilo muy básico por ahora */
 .container {
@@ -68,4 +68,104 @@ button {
   margin-right: 5px;
   cursor: pointer;
 }
+</style>
+-->
+<style scoped>
+
+/* CONTENEDOR */
+.container {
+  padding: 30px;
+}
+
+/* TITULO */
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* TABLA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* ENCABEZADO */
+thead {
+  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* FILAS */
+td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* EFECTO HOVER */
+tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+/* PRECIO */
+td:nth-child(2) {
+  color: #00f7ff;
+  font-weight: bold;
+}
+
+/* BOTONES */
+button {
+  border: none;
+  padding: 6px 10px;
+  margin: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+/* EDITAR */
+button:nth-child(1) {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+
+/* ELIMINAR */
+button:nth-child(2) {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+/* CARRITO */
+button:nth-child(3) {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+/* HOVER BOTONES */
+button:hover {
+  transform: scale(1.1);
+}
+
+/* BOTON CREAR */
+.container > a button {
+  margin-top: 15px;
+  background: linear-gradient(45deg, #a855f7, #22d3ee);
+  padding: 10px 15px;
+}
+
+/* MENSAJE VACIO */
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
 </style>

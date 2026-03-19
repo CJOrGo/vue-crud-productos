@@ -4,11 +4,11 @@ import { defineStore } from 'pinia'
 export const useProductoStore = defineStore('producto', () => {
   // State: Arreglo con 5 productos precargados
   const productos = ref([
-    { id: 1, nombre: 'Laptop Gamer', precio: 25000 },
-    { id: 2, nombre: 'Monitor 27"', precio: 4500 },
-    { id: 3, nombre: 'Teclado Mecánico', precio: 1200 },
-    { id: 4, nombre: 'Mouse Inalámbrico', precio: 800 },
-    { id: 5, nombre: 'Audífonos Pro', precio: 2500 },
+    { id: 1, cantidad: 1, nombre: 'Laptop Gamer', precio: 25000 },
+    { id: 2, cantidad: 1, nombre: 'Monitor 27"', precio: 4500 },
+    { id: 3, cantidad: 1, nombre: 'Teclado Mecánico', precio: 1200 },
+    { id: 4, cantidad: 1, nombre: 'Mouse Inalámbrico', precio: 800 },
+    { id: 5, cantidad: 1, nombre: 'Audífonos Pro', precio: 2500 },
   ])
 
   // Actions: Lógica de manejo de datos

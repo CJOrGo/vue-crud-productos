@@ -1,0 +1,321 @@
+/* ESTILOS GENERALES */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: white;
+}
+
+/* NAV */
+.nav {
+  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+  padding: 15px 25px;
+  display: flex;
+  gap: 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #ffe600;
+}
+
+/* CONTENEDOR */
+.container {
+  padding: 30px;
+}
+
+/* TARJETAS */
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* BOTONES */
+button {
+  background: linear-gradient(45deg, #a855f7, #22d3ee);
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* INPUTS */
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.precio {
+  font-size: 18px;
+  color: #00f7ff;
+}
+
+.acciones {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* ESTILOS DE MI CARRITO*/
+.carrito-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* TITULO */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CARRITO VACIO */
+.empty-cart {
+  text-align: center;
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* TABLA */
+.carrito-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* HEAD */
+.carrito-table thead {
+  background: linear-gradient(90deg, #a855f7, #22d3ee);
+}
+
+.carrito-table th {
+  padding: 15px;
+  text-align: left;
+}
+
+/* BODY */
+.carrito-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* HOVER FILAS */
+.carrito-table tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* TOTAL */
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00f7ff;
+}
+
+/* BOTONES GENERALES */
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+/* BOTON PRINCIPAL */
+.btn-primary {
+  background: linear-gradient(45deg, #7b2ff7, #00c6ff);
+}
+
+/* BOTON ELIMINAR */
+.btn-delete {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+.btn-delete:hover {
+  transform: scale(1.05);
+}
+
+/* BOTON VACIAR */
+.btn-clear {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  color: black;
+}
+
+/* BOTON FINALIZAR */
+.btn-checkout {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+/* ACCIONES */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* TEXTO DERECHA */
+.text-right {
+  text-align: right;
+}
+
+/*              ESTILOS FINALIZAR COMPRA           */
+
+/* CONTENEDOR */
+.checkout-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* TITULO */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* LAYOUT */
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/* FORMULARIO */
+.checkout-form {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* CAMPOS */
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* INPUTS */
+input, textarea, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: rgb(237, 229, 229);
+}
+
+/* PLACEHOLDER */
+input::placeholder,
+textarea::placeholder {
+  color: #eddada;
+}
+
+/* SELECT */
+select {
+  cursor: pointer;
+}
+
+/* TARJETA RESUMEN */
+.summary-card {
+  background: linear-gradient(135deg, #7b2ff7, #00c6ff);
+  padding: 20px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  height: fit-content;
+}
+
+/* TOTAL */
+.total {
+  font-size: 1.5rem;
+  color: #ffe600;
+}
+
+/* BOTON CONFIRMAR */
+.btn-confirm {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #a855f7, #22d3ee);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-confirm:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* LINK */
+a {
+  color: #ffe600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
